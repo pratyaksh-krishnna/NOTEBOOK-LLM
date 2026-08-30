@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Compiled output
+dist/
+
+# Prisma Client is regenerated from prisma/schema.prisma via `prisma generate`
+/src/generated/
+
+# Agent skill files written by `prisma init`
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
