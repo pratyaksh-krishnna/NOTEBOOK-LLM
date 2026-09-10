@@ -1,7 +1,7 @@
 import type { NextFunction, Request, Response } from "express";
 import { fromNodeHeaders } from "better-auth/node";
 import { auth } from "../lib/auth.js";
-import type { Session } from "../lib/session.ts";
+import type { Session } from "../lib/session.js";
 
 declare module "express-serve-static-core" {
     interface Request {
@@ -25,4 +25,4 @@ export async function requireAuth(
 
     req.session = session;
     next();
-}               
+}
