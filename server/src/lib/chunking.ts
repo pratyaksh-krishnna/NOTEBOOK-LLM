@@ -157,7 +157,7 @@ export function chunkPages(
     const chunks: TextChunk[] = [];
     let index = 0;
 
-    for (let pageIndex = 0; pageIndex < pages.length; pageIndex++) {
+    for (let pageIndex  = 0; pageIndex < pages.length; pageIndex++) {
         const pageText = pages[pageIndex].trim();
         if (!pageText) {
             continue;
@@ -173,6 +173,7 @@ export function chunkPages(
                 index,
                 content: chunk.content,
                 metadata: chunk.metadata,
+
             });
             index += 1;
         }
